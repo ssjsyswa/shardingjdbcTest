@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../aggrepay-ruoyi/aggrepay-modules/aggrepay-admin/src/main/resources/bootstrap.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../aggrepay-ruoyi/aggrepay-modules/aggrepay-ipg/src/main/resources/bootstrap.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../arithmetic/src/SonwFlakeId.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../arithmetic/src/TestMod.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mobbpay/mobbpay_comm/src/main/java/com/mobbpay/mobbpaycomm/modle/entity/TGpMerchantAccount.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mobbpay/mobbpay_config/src/main/resources/bootstrap.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mobbpay/mobbpay_core/src/main/java/com/mobbpay/mobbpayapi/component/id/RedisIDs.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mobbpay/mobbpay_core/src/main/java/com/mobbpay/mobbpayapi/component/listener/MobbpayEventListener.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/OrderShadingJdbcDemoApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/algorithm/BeginAndEndDate.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/algorithm/DBShardingAlgorithm.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/algorithm/RangeDSShardingAlgorithm.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/algorithm/RangeDataBaseShardingAlgorithm.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/algorithm/RangeTableShardingAlgorithm.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/algorithm/RangeTableShardingAlgorithm2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/algorithm/ShardingUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/algorithm/SnowFlakeId.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/algorithm/SonwFlakeId.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/algorithm/TableShardingAlgorithm.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/algorithm/q.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/controller/GoodsController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/controller/TransActionRequestController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/entity/Goods.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/entity/Tabrecord.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/entity/TransactionRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/mapper/GoodsMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/mapper/TabrecordMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/mapper/TransactionRequestMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/service/IGoodsService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/paywharf/ordershadingjdbcdemo/service/impl/GoodsServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/application.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/mapper/GoodsMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/mapper/TransactionRequestMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../shardingsphere-master/examples/shardingsphere-jdbc-example/single-feature-example/cluster-mode-example/cluster-mode-spring-boot-mybatis-example/src/main/resources/application-local-zookeeper-sharding-databases-tables.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../shardingsphere-master/examples/shardingsphere-jdbc-example/single-feature-example/shadow-example/shadow-raw-jdbc-example/src/main/resources/META-INF/shadow.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

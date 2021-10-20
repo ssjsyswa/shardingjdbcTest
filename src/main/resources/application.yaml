@@ -1,0 +1,106 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /
+
+# 应用名称
+#spring:
+#  application:
+#    name: springboot-shardingjdbc
+#  shardingsphere:
+#    datasource:
+#      common:
+#        driver-class-name: com.mysql.cj.jdbc.Driver
+#        type: com.alibaba.druid.pool.DruidDataSource
+#        url: jdbc:mysql://172.18.21.204:3306/bendi?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=GMT%2B8
+#        username: root
+#        password: password
+#      # 数据源名称
+#      names: master,slave01
+#      master:
+#        type: com.alibaba.druid.pool.DruidDataSource
+#        # 数据库驱动：
+#        driver-class-name: com.mysql.cj.jdbc.Driver
+#        # 数据库连接地址
+#        url: jdbc:mysql://172.18.21.204:3306/dbipg?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=GMT%2B8
+#        # 数据库用户名&密码：
+#        username: root
+#        password: password
+#      slave01:
+#        type: com.alibaba.druid.pool.DruidDataSource
+#        # 数据库驱动：
+#        driver-class-name: com.mysql.cj.jdbc.Driver
+#        # 数据库连接地址
+#        url: jdbc:mysql://172.18.21.203:3306/dbipg?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=GMT%2B8
+#        # 数据库用户名&密码：
+#        username: flypay_dev
+#        password: Flypay@2021!
+#    props:
+#      sql:
+#        show: true
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  shardingsphere:
+    props:
+      sql:
+        show: true
+    datasource:
+      dbipg-2021:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://172.18.21.203:3306/dbipg-2021?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=GMT%2B8
+        username: flypay_dev
+        password: Flypay@2021!
+      dbipg-2022:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://172.18.21.204:3306/dbipg-2022?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=GMT%2B8
+        type: com.alibaba.druid.pool.DruidDataSource
+        username: root
+        password: password
+      names: dbipg-2021,dbipg-2022
+
+    sharding:
+      binding-tables: transaction_request
+      tables:
+        transaction_request:
+          actual-data-nodes: dbipg-2021.transaction_request_2021_$->{1..4},dbipg-2022.transaction_request_2022_$->{1..4}
+          database-strategy:
+            standard:
+              precise-algorithm-class-name: com.paywharf.ordershadingjdbcdemo.algorithm.DBShardingAlgorithm
+              range-algorithm-class-name: com.paywharf.ordershadingjdbcdemo.algorithm.RangeDataBaseShardingAlgorithm
+              sharding-column: req_initiate_date
+          key-generator:
+            column: id
+            props:
+              worker:
+                id: 123
+            type: SNOWFLAKE
+          table-strategy:
+            standard:
+              precise-algorithm-class-name: com.paywharf.ordershadingjdbcdemo.algorithm.TableShardingAlgorithm
+              range-algorithm-class-name: com.paywharf.ordershadingjdbcdemo.algorithm.RangeTableShardingAlgorithm2
+              sharding-column: req_initiate_date
+
+
+
+
+
+
+
+
+logging:
+  level:
+    com.lucifer.springboot.cache.mapper: debug
+
+
+
+
+# mybatis配置
+mybatis:
+  # 搜索指定包别名
+  typeAliasesPackage: com.paywharf.ordershadingjdbcdemo
+  # 配置mapper的扫描，找到所有的mapper.xml映射文件
+  mapperLocations: classpath:mapper/**/*.xml
